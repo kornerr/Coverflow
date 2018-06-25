@@ -23,7 +23,6 @@
 		9FA683FC20DCF02700AF1509 /* CoverFlowSectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA683F620DCF02700AF1509 /* CoverFlowSectionsView.swift */; };
 		9FA683FD20DCF02700AF1509 /* CoverFlowSectionsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA683F720DCF02700AF1509 /* CoverFlowSectionsItemView.swift */; };
 		9FA683FE20DCF02700AF1509 /* CoverFlowSectionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA683F820DCF02700AF1509 /* CoverFlowSectionsView.xib */; };
-		9FA683FF20DCF02700AF1509 /* CoverFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA683F920DCF02700AF1509 /* CoverFlowLayout.swift */; };
 		9FA6840020DCF02700AF1509 /* CoverFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA683FA20DCF02700AF1509 /* CoverFlowCoordinator.swift */; };
 		9FA6840120DCF02700AF1509 /* CoverFlowSectionsItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA683FB20DCF02700AF1509 /* CoverFlowSectionsItemView.xib */; };
 		9FA6840C20DCF0C700AF1509 /* race.drell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6840320DCF0C700AF1509 /* race.drell.png */; };
@@ -62,7 +61,6 @@
 		9FA683F620DCF02700AF1509 /* CoverFlowSectionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowSectionsView.swift; sourceTree = "<group>"; };
 		9FA683F720DCF02700AF1509 /* CoverFlowSectionsItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowSectionsItemView.swift; sourceTree = "<group>"; };
 		9FA683F820DCF02700AF1509 /* CoverFlowSectionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverFlowSectionsView.xib; sourceTree = "<group>"; };
-		9FA683F920DCF02700AF1509 /* CoverFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowLayout.swift; sourceTree = "<group>"; };
 		9FA683FA20DCF02700AF1509 /* CoverFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowCoordinator.swift; sourceTree = "<group>"; };
 		9FA683FB20DCF02700AF1509 /* CoverFlowSectionsItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverFlowSectionsItemView.xib; sourceTree = "<group>"; };
 		9FA6840320DCF0C700AF1509 /* race.drell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = race.drell.png; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				9FA683FA20DCF02700AF1509 /* CoverFlowCoordinator.swift */,
-				9FA683F920DCF02700AF1509 /* CoverFlowLayout.swift */,
 				9FA683F720DCF02700AF1509 /* CoverFlowSectionsItemView.swift */,
 				9FA683FB20DCF02700AF1509 /* CoverFlowSectionsItemView.xib */,
 				9FA683F620DCF02700AF1509 /* CoverFlowSectionsView.swift */,
@@ -283,7 +280,6 @@
 				9FA683FC20DCF02700AF1509 /* CoverFlowSectionsView.swift in Sources */,
 				9FA6842320DCF23300AF1509 /* CBetterCollectionViewLayoutAttributes.m in Sources */,
 				9FA6842720DCF23300AF1509 /* CInterpolator.mm in Sources */,
-				9FA683FF20DCF02700AF1509 /* CoverFlowLayout.swift in Sources */,
 				9FA683FD20DCF02700AF1509 /* CoverFlowSectionsItemView.swift in Sources */,
 				9FA683E920DCF00300AF1509 /* UIView+Embed.swift in Sources */,
 				9F7D80F320DD097300328E6D /* CBetterCollectionViewCellTemplate.swift in Sources */,
