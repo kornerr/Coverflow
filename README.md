@@ -1,44 +1,42 @@
 
 # Overview
 
-TODO
+This is a sample iOS application with cover flow effect using UICollectionView layout from [schwa/Coverflow][schwa-Coverflow].
 
 # Preview
 
-TODO
+This is what the app looks like:
 
+![Preview][preview]
 
+# Architecture overview
 
-TODO:
+* AppDelegate
+    * creates UIWindow
+    * instantiates CoverFlowCoordinator
+    * assigns UIWindow's rootVC to CoverFlowCoordinator's one
+* CoverFlowCoordinator
+    * instantiates CoverFlowSectionsView
+    * embeds CoverFlowSectionsView into VC
+* CoverFlowSectionsView
+    * uses [schwa/Coverflow][schwa-Coverflow] to display UICollectionView cells as cover flow
+    * uses CoverFlowSectionsViewItem for cell views
+* CoverFlowSectionsViewItem
+    * represents cell's view
+    * only has UIImage so far
+* SectionsItem
+    * internal representation displayed by CoverFlowSectionsViewItem
 
-* location of Coverflow (aka integration)
-    * also list how to take it to anybody else's project
-* app architecture
-* ME races' source
-* last checked to work on Xcode-9.3 and iPhone X and iOS 11.?
+[schwa/Coverflow][schwa-Coverflow] is located under `External/schwa-Coverflow`.
 
-ORIGINAL README BELOW
+# Images
 
-# Coverflow Implementation using UICollectionView
+Images represent [Mass Effect races][me-races].
 
-## What?
+# What's missing
 
-This is an iPhone project implementing Coverflow using iOS 6 UICollectionViews and a custom UICollectionViewLayout
+Paging by cell.
 
-Screenshot: [http://cloud.schwa.io/image/0z0N3A0e2b1l](http://cloud.schwa.io/image/0z0N3A0e2b1l)
-
-View it in action here: [CollectionViewCoverFlow.mov](http://cloud.schwa.io/1120003t3N2Y)
-
-Yes, Apple demoed this at WWDC but I think the interpolation technique I use is rather neat and allows you to easily adjust the layout and behavior of the layout.
-
-## CInterpolator
-
-CInterpolator objects are a little like CAKeyFrameAnimation objects except they're not necessarily time based. You can use them for (linear) key frame interpolation between any keys and values
-
-## TODO
-
-* The "Gloom" layer doesn't do a very good job with alpha backgrounds.
-* Aliasing is very obvious on straight edges when rotation.
-* Shadow needs to be longer to deal with perspective transform. See next item.
-* Need to specify manually the Y position of cells so that we can force cells to draw offscreen (for shadows). Or just rely on UIKit's ability to not clip to bounds.
-* Need to properly deal with aspect fill/fit images.
+[preview]: preview.gif
+[schwa-Coverflow]: https://github.com/schwa/Coverflow
+[me-races]: http://masseffect.wikia.com/wiki/Races
