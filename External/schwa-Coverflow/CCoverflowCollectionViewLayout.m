@@ -179,6 +179,17 @@
 	if (round(theDelta) == 0)
 		{
 		self.currentIndexPath = indexPath;
+
+        /*
+        // TODO REMOVE after testing
+        NSLog(
+            @"CCoverflowCollectionViewLayout "
+            @"Current index path: (%d, %d)",
+            self.currentIndexPath.row,
+            self.currentIndexPath.section
+        );
+        */
+ 
 		}
 
 	// #########################################################################
@@ -232,6 +243,26 @@
         theTargetContentOffset.x = round(theTargetContentOffset.x / self.cellSpacing) * self.cellSpacing;
         theTargetContentOffset.x = MIN(theTargetContentOffset.x, (self.cellCount - 1) * self.cellSpacing);
         }
+
+    /*
+    // TODO REMOVE after testing.
+    NSLog(
+        @"CCoverflowCollectionViewLayout "
+        @"Proposed target content offset: (%f, %f) velocity: (%f, %f)",
+        proposedContentOffset.x, 
+        proposedContentOffset.y,
+        velocity.x,
+        velocity.y
+    );
+    NSLog(
+        @"CCoverflowCollectionViewLayout "
+        @"Target content offset: (%f, %f)",
+        theTargetContentOffset.x, 
+        theTargetContentOffset.y
+    );
+    */
+
+
     return(theTargetContentOffset);
     }
 

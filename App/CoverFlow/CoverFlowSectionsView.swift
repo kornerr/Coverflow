@@ -52,6 +52,8 @@ class CoverFlowSectionsView:
     {
         self.collectionView.register(Cell.self, forCellWithReuseIdentifier: CellId)
         self.collectionView.dataSource = self
+        
+        self.collectionView.decelerationRate = 100.0
 
         self.collectionViewLayout = CCoverflowCollectionViewLayout()
         self.collectionView.collectionViewLayout = self.collectionViewLayout
